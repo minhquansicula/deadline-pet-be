@@ -1,6 +1,7 @@
 package com.quan.deadline_pet_be.service.impl;
 
 import com.quan.deadline_pet_be.domain.*;
+import com.quan.deadline_pet_be.dto.request.TaskRequest;
 import com.quan.deadline_pet_be.repository.*;
 import com.quan.deadline_pet_be.service.TaskService;
 import lombok.RequiredArgsConstructor;
@@ -32,5 +33,7 @@ public class TaskServiceImpl implements TaskService {
         return taskRepository.save(task);
     }
 
-    // ... Triển khai các hàm khác
+    public Task createTask(TaskRequest request){
+        return null;
+    }
 }
